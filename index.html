@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Учебная игра «Крестики-нолики» против компьютера">
+  <title>Крестики-нолики</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game">
+    <header class="game__header">
+      <p class="game__eyebrow">Ретро-аркада</p>
+      <h1>Крестики-нолики</h1>
+
+      <section class="scoreboard" aria-label="Счёт игры">
+        <div class="scoreboard__item">
+          <span class="scoreboard__label">Игрок</span>
+          <strong id="player-score">0</strong>
+        </div>
+        <div class="scoreboard__item">
+          <span class="scoreboard__label">Ничьи</span>
+          <strong id="draw-score">0</strong>
+        </div>
+        <div class="scoreboard__item">
+          <span class="scoreboard__label">Компьютер</span>
+          <strong id="computer-score">0</strong>
+        </div>
+      </section>
+    </header>
+
+    <p id="status" class="status" aria-live="polite">Ваш ход — выберите клетку</p>
+
+    <div id="board" class="board" aria-label="Игровое поле">
+      <button class="cell" type="button" data-index="0" aria-label="Клетка 1"></button>
+      <button class="cell" type="button" data-index="1" aria-label="Клетка 2"></button>
+      <button class="cell" type="button" data-index="2" aria-label="Клетка 3"></button>
+      <button class="cell" type="button" data-index="3" aria-label="Клетка 4"></button>
+      <button class="cell" type="button" data-index="4" aria-label="Клетка 5"></button>
+      <button class="cell" type="button" data-index="5" aria-label="Клетка 6"></button>
+      <button class="cell" type="button" data-index="6" aria-label="Клетка 7"></button>
+      <button class="cell" type="button" data-index="7" aria-label="Клетка 8"></button>
+      <button class="cell" type="button" data-index="8" aria-label="Клетка 9"></button>
+    </div>
+
+    <p class="legend"><span>Вы: X</span><span>Компьютер: O</span></p>
+    <button id="restart-button" class="restart-button" type="button">Начать заново</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
